@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Grandes</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #c4e2e6;
+        }
+
+        td, th {
+            border: 1px solid #8f8f8f;
+            text-align: center;
+            padding: 5px 10px;
+        }
+
+        .estado {
+            text-align: left;
+        }
+
+        thead th {
+            background-color: #c4e2e6;
+            font-weight: bold;
+        }
+
+        tfoot td {
+            background-color: #c4e2e6;
+            font-weight: bold;
+        }
+
+        caption {
+            background-color: #434346;
+            font-weight: bold;
+            border: 1px solid #8f8f8f;
+            color: white;
+            padding: 8px 0px;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>População Brasileira por Estado</caption>
+        <thead>
+            <tr>
+                <th scope="col">Posição</th>
+                <th scope="col">Unidade Federativa</th>
+                <th scope="col">População 2010</th>
+                <th scope="col">População 2022</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td class="estado">São Paulo</td>
+                <td>41,262,199</td>
+                <td>46,024,937</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td  class="estado">Minas Gerais</td>
+                <td>41,262,199</td>
+                <td>46,024,937</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td  class="estado">Rio de Janeiro</td>
+                <td>15,989,929</td>
+                <td>16,615,526</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td  class="estado">Bahia</td>
+                <td>14,016,906</td>
+                <td>14,659,023</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td  class="estado">Paraná</td>
+                <td>10,444,526</td>
+                <td>11,835,379</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td  class="estado">Rio Grande do Sul</td>
+                <td>10,693,929</td>
+                <td>11,088,065</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td  class="estado">Pernambuco</td>
+                <td>8 796 448</td>
+                <td>9 051 113</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td  class="estado">Ceará</td>
+                <td>8,452,381</td>
+                <td>8,936,431</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td  class="estado">Pará</td>
+                <td>7,581,051</td>
+                <td>8,442,962</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td  class="estado">Santa Catarina</td>
+                <td>6,248,436</td>
+                <td>7,762,154</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

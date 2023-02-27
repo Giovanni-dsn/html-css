@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Códigos</h2>
+    <p>Nós podemos delimitar uma área para mostrar um código escrito com a tag &lt;code&gt;. Por exemplo:</p>
+    <code>num = 0
+        while num &lt;= 6:
+            print(f'{num} ...')
+            num += 1
+        print('Terminei de contar !')
+    </code>
+    <p>Só que dessa maneira, o código não ficará formatado, apenas as letras serão impressas no modo monoespaçado para identificar no texto que trata-se de um código.</p>
+    <p>Caso queira que o código fique na formatação desejada, é necessario usar a tag &lt;pre&gt; e colocar a tag &lt;code&gt; dentro dela. Por exemplo:</p>
+    <pre>
+        <code>
+    num = 0
+    while num &lt;= 6:
+        print(f'{num} ...')
+        num += 1
+    print('Terminei de contar !')
+        </code>
+    </pre>
+    <h2>Citações simples</h2>
+    <p>Como diria o pai de um amigo: <q>O computador é um burro muito rápido</q>. Fazemos a citação com a tag &lt;q&gt;</p>
+    <h2>Citações completas</h2>
+    <p>Segundo <em>Fulano</em> em seu livro <em>Vida de Fulaninho</em>:</p>
+    <blockquote>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque modi, est sit officiis quidem dignissimos autem accusantium molestias id dolores assumenda? Amet sed expedita dolor corporis tempore sint iusto consequatur.
+    </blockquote>
+    <p>A tag &lt;blockquote&gt; faz com que o bloco de texto seja deslocado para a direita, como uma citação mias completa</p>
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Isso faz criar um popup com o significado da sigla usando a tag &lt;abbr&gt;</p>
+    <h2>Texto Invertido</h2>
+    <p><bdo dir="rtl">Estou aprendendo HTML no Curso em Vídeo</bdo>. Isso faz o texto ficar invertido usando a tag &lt;bdo&gt; e definindo a direção inicio-fim em "dir" com "rtl" que é Right to Left ou "ltr" que é Left to Right</p>
+</body>
+</html>
